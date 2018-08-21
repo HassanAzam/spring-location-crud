@@ -7,13 +7,14 @@
 <title>Create Location</title>
 </head>
 <body>
-<form action="" method="">
-ID : 	<input type="text" name="id"/>
-Code : 	<input type="text" name="code"/>
-Name : 	<input type="text" name="name"/>
-Type : 	<input type="radio" name="type"/>
-		<input type="radio" name="type"/>
+<form action="saveLocation" method="post">
+ID : 	<input type="text" name="id"/> <br>
+Code : 	<input type="text" name="code"/> <br>
+Name : 	<input type="text" name="name"/> <br>
+Type : 	Urban <input type="radio" name="type" value="urban"/>
+		Rural <input type="radio" name="type" value="rural"/><br>
 		<input type="submit" value="save" />
 </form>
+${msg}
 </body>
 </html>
