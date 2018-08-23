@@ -35,6 +35,11 @@ public class LocationServiceImpl implements LocationService {
 	public void deleteLocation(Location location) {
 		repository.delete(location);		
 	}
+	
+	@Override
+	public void deleteLocationById(int id) {
+		repository.deleteById(id);		
+	}
 
 	@Override
 	public List<Location> getAllLocations() {
